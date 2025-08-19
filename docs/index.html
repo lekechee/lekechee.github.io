@@ -117,6 +117,54 @@
     button:hover {
       background: #005bb5;
     }
+
+    .footer {
+      background: #222;
+      color: #ddd;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer h3 {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .footer p, .footer a {
+      font-size: 0.95rem;
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #0073e6;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin: 0.5rem 0;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 2rem;
+      border-top: 1px solid #444;
+      padding-top: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
@@ -178,5 +226,39 @@
       }
     };
   </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>We provide high-quality services tailored to your needs. Get in touch with us to know more!</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <!-- <li><a href="#">Home</a></li> -->
+          <!-- <li><a href="#gallery">Products</a></li> -->
+          <!-- <li><a href="#enquiry">Enquiry</a></li> -->
+          <!-- <li><a href="mailto:sales@mysite.com">Contact</a></li> -->
+          <p>Please choose any option from above to get the enquiry form.</p> 
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <!-- <p>Email: <a href="care@lekechee.com">care@lekechee.com</a></p> -->
+        <!-- <p>Phone: <a href="tel:+91-8486957271">+91-8486957271</a></p> -->
+        <p>Email: care@lekechee.com</p>
+        <p>Phone: +91-8486957271</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Lekechee Innovations Private Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
