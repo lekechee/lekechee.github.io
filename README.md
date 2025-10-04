@@ -1,5 +1,5 @@
 # lekechee.github.io
-This will have the site to reach "Lekechee" to book any services that are on offer.
+This is the main repo that will have the site to reach "Lekechee" to book any services that are on offer.
 
 # Organization Name
 **Lekechee** is the github organization created to have the repo *lekechee.github.io* which is following the format \<organization\>.github.io required to publish a site. 
