@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lekechee Technologies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -39,7 +40,7 @@
     }
 
     .gallery .tile {
-      background: white;
+      background: #c5c2b9;
       border-radius: 15px;
       padding: 2rem;
       text-align: center;
@@ -160,6 +161,26 @@
       margin: 0.5rem 0;
     }
 
+    .footer-contact i {
+      margin-right: 8px;
+      color: #0073e6;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      color: #ddd;
+      margin-right: 15px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #0073e6;
+    }
+
     .footer-bottom {
       text-align: center;
       margin-top: 2rem;
@@ -188,7 +209,7 @@
       <h3>Mobile Apps</h3>
       <p>Custom iOS & Android solutions.</p>
     </div>
-    <div class="tile" onclick="openForm('Cloud Solutions')">
+    <div class="tile" onclick="openForm('AI Solutions')">
       <h3>AI Solutions</h3>
       <p>Innovate with AI.</p>
     </div>
@@ -247,26 +268,27 @@
     <div class="footer-container">
       <div class="footer-about">
         <h3>About Us</h3>
-        <p>We provide high-quality services tailored to your needs. Get in touch with us to know more!</p>
+        <p>We provide high-quality software services tailored to your needs. Get in touch with us to start your journey!</p>
       </div>
 
       <div class="footer-links">
         <h3>Quick Links</h3>
         <ul>
-          <!-- <li><a href="#">Home</a></li> -->
-          <!-- <li><a href="#gallery">Products</a></li> -->
-          <!-- <li><a href="#enquiry">Enquiry</a></li> -->
-          <!-- <li><a href="mailto:sales@mysite.com">Contact</a></li> -->
           <p>Please choose any option from above to get the enquiry form.</p> 
         </ul>
       </div>
 
       <div class="footer-contact">
         <h3>Contact</h3>
-        <!-- <p>Email: <a href="care@lekechee.com">care@lekechee.com</a></p> -->
-        <!-- <p>Phone: <a href="tel:+91-8486957271">+91-8486957271</a></p> -->
-        <p>Email: care@lekechee.com</p>
-        <p>Phone: +91-8486957271</p>
+        <p><i class="fa-solid fa-envelope"></i><a href="mailto:care@lekechee.com">care@lekechee.com</a></p>
+        <p><i class="fa-solid fa-phone"></i><a href="tel:+918486957271">+918486957271</a></p>
+
+        <div class="social-links">
+          <!-- <a href="https://www.facebook.com/profile.php?id=61579428725702" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a> -->
+          <!-- <a href="https://instagram.com/lekechee" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a> -->
+          <!-- <a href="https://twitter.com/lekechee" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+          <a href="https://www.linkedin.com/company/lekechee-technologies/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
     </div>
 

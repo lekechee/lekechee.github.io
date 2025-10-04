@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lekechee</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     html, body {
       height: 100%;
@@ -43,22 +44,21 @@
     }
     .tab {
       flex: 1 1 300px;
-      background: white;
+      background: #c5c2b9;
       border-radius: 15px;
       text-align: center;
       padding: 2rem;
       font-size: 1.2rem;
       font-weight: bold;
-      color: #0073e6;
+      color: black;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       transition: background 0.3s, transform 0.3s;
       cursor: pointer;
       text-decoration: none;
     }
     .tab:hover {
-      background: #0073e6;
-      color: white;
-      transform: translateY(-5px);
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
     .tab-icon {
       font-size: 3rem;
@@ -68,15 +68,76 @@
     footer {
       background: #222;
       color: #ddd;
-      text-align: center;
+      text-align: left;
       padding: 2rem 1rem;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer h3 {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .footer p, .footer a {
+      font-size: 0.95rem;
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #0073e6;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin: 0.5rem 0;
+    }
+
+    .footer-contact i {
+      margin-right: 8px;
+      color: #0073e6;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      color: #ddd;
+      margin-right: 15px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #0073e6;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 2rem;
+      border-top: 1px solid #444;
+      padding-top: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Welcome to Lekechee</h1>
-    <p>Innovations across Creations & Technologies</p>
+    <p>Innovations across Creations and Technologies</p>
   </header>
 
   <main class="tabs-container">
@@ -90,8 +151,34 @@
     </a>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Lekechee Innovations Private Limited. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>We provide high-quality services tailored to your needs. Be it software solutions or creating your space - we got you! Get in touch with us to start your journey!</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <p>Please choose any option from above to access our dedicated brach for your service.</p> 
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p><i class="fa-solid fa-envelope"></i><a href="mailto:care@lekechee.com">care@lekechee.com</a></p>
+        <p><i class="fa-solid fa-phone"></i><a href="tel:+918486957271">+918486957271</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Lekechee Innovations Private Limited. All rights reserved.</p>
+    </div>
   </footer>
+
+</body>
+</html>
 </body>
 </html>
